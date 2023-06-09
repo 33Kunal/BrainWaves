@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import tweetRoutes from "./Routes/tweets.js";
 import userRoutes from "./Routes/users.js";
 
-const PORT = process.env.PORT || 8000;
+// const PORT = process.env.PORT || 8000;
 
 const app = express();
 dotenv.config();
@@ -31,7 +31,7 @@ app.use("/api/tweets", tweetRoutes);
 
 
 
-app.listen(PORT, () => {
+app.listen(8000, () => {
   connect();
-  console.log(`Listening to port ${PORT}`);
+  console.log(`Listening to port 8000`);
 });
